@@ -35,7 +35,7 @@ export default function Skills() {
         <meta property="og:description" content="Explore my skills and projects." />
       </Head>
 
-      <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-100 dark:from-gray-800 to-blue-200 dark:to-gray-900 py-16 overflow-hidden">
+      <div className="relative flex flex-col items-center justify-center min-h-screen py-16 overflow-hidden">
         {/* Background icons */}
         <div className="absolute inset-0 flex items-center justify-center opacity-10">
           <motion.div
@@ -68,7 +68,7 @@ export default function Skills() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <Card className="border-0 rounded-none bg-white dark:bg-gray-800">
+              <Card className="border-0 rounded-none bg-white dark:bg-gray-900">
                 <CardBody className="p-8 text-gray-800 dark:text-gray-300">
                   <p className={subtitle({ class: "opacity-80 mb-4" })}>
                     I&apos;m Sanele Hlongwane, a passionate software developer
@@ -94,7 +94,7 @@ export default function Skills() {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <Card className="border-0 rounded-none bg-white dark:bg-gray-800">
+              <Card className="border-0 rounded-none bg-white dark:bg-gray-900">
                 <CardBody className="grid grid-cols-2 gap-6 p-8 text-lg text-gray-700 dark:text-gray-200">
                   {[
                     { icon: FaReact, label: "JavaScript (React, Next.js)" },
@@ -129,7 +129,7 @@ export default function Skills() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1.2 }}
             >
-              <Card className="border-0 rounded-none bg-white dark:bg-gray-800">
+              <Card className="border-0 rounded-none bg-white dark:bg-gray-900">
                 <CardBody className="space-y-4 p-8 text-lg text-gray-700 dark:text-gray-200">
                   {[
                     {

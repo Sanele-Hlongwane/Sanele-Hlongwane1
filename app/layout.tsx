@@ -37,7 +37,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "dark:bg-gray-800 bg-gray-100 transition-colors duration-500 font-sans antialiased",
+          "dark:bg-gray-900 bg-gray-100 transition-colors duration-500 font-sans antialiased",
           fontSans.variable,
         )}
       >
@@ -47,9 +47,12 @@ export default function RootLayout({
             <main className="container mx-auto flex-grow">
               {children}
             </main>
-            <footer className="bg-gray-800 text-white py-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Sanele Hlongwane ❤️. All rights reserved.</p>
-        </footer>
+            <footer className="bg-gray-100 dark:bg-gray-900 dark:text-white text-black py-4 text-center border-t border-gray-300 dark:border-gray-700">
+              <p className="mb-1">
+                &copy; {new Date().getFullYear()} Portfolio ❤️. All rights reserved.
+              </p>
+              <p className="text-sm">Designed by Sanele Hlongwane</p>
+            </footer>
           </div>
         </Providers>
       </body>
