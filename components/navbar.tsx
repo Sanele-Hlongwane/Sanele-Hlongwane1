@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Navbar as NextUINavbar,
@@ -14,9 +14,10 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
-import logo from "@/public/images/logo.png"
+import logo from "@/public/images/logo.png";
 import router from "next/router";
 import { FaSun, FaMoon } from "react-icons/fa";
+import SaneleLogo from "./SaneleLogo";
 
 export const Navbar = () => {
   const [role, setRole] = useState<string | null>(null);
@@ -33,7 +34,6 @@ export const Navbar = () => {
   const handleThemeToggle = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
-
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -66,7 +66,7 @@ export const Navbar = () => {
 
   const commonLinks = (
     <>
-       <NavbarMenuItem>
+      <NavbarMenuItem>
         <Link className={getLinkClasses('/')} href="/" onClick={() => handleLinkClick('/')}>
           Home
         </Link>
@@ -90,51 +90,45 @@ export const Navbar = () => {
   );
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar maxWidth="xl" position="sticky" className="border-b border-gray-300 dark:border-gray-600">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
+        <NavbarBrand as="li" className="gap-3 max-w-fit max-h-fit">
           <Link className="flex justify-start items-center gap-1" href="/">
-            <Image 
-              src={logo}
-              alt="Sanele" 
-              width={32} 
-              height={32} 
-              className="w-8 h-8 text-bold invert-on-dark" 
-            />
+            <SaneleLogo />
           </Link>
         </NavbarBrand>
 
         <ul className="hidden lg:flex gap-2 justify-start ml-2">
-            {commonLinks}
+          {commonLinks}
         </ul>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
-      <button onClick={handleThemeToggle} className="focus:outline-none">
-            {theme === 'dark' ? (
-              <FaSun className="w-6 h-6 text-yellow-300" />
-            ) : (
-              <FaMoon className="w-6 h-6 text-blue-800" />
-            )}
-          </button>
-       </NavbarContent>
+        <button onClick={handleThemeToggle} className="focus:outline-none">
+          {theme === 'dark' ? (
+            <FaSun className="w-6 h-6 text-yellow-300" />
+          ) : (
+            <FaMoon className="w-6 h-6 text-purple-700" />
+          )}
+        </button>
+      </NavbarContent>
 
-       {menuOpen && (
+      {menuOpen && (
         <NavbarMenu>
           <div className="mx-4 mt-2 flex flex-col gap-1">
-              {commonLinks}
+            {commonLinks}
           </div>
         </NavbarMenu>
       )}
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-          <button onClick={handleThemeToggle} className="focus:outline-none">
-            {theme === 'dark' ? (
-              <FaSun className="w-6 h-6 text-yellow-300" />
-            ) : (
-              <FaMoon className="w-6 h-6 text-blue-800" />
-            )}
-          </button>
+        <button onClick={handleThemeToggle} className="focus:outline-none">
+          {theme === 'dark' ? (
+            <FaSun className="w-6 h-6 text-yellow-300" />
+          ) : (
+            <FaMoon className="w-6 h-6 text-blue-800" />
+          )}
+        </button>
         <NavbarMenuToggle onClick={() => setMenuOpen(!menuOpen)} />
       </NavbarContent>
     </NextUINavbar>

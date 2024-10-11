@@ -10,7 +10,7 @@
   .dark .invert-on-dark {
   filter: invert(1);
   }
-  
+
 @keyframes blob {
     0%,
     100% {
@@ -48,7 +48,7 @@
   }
   
   .navbar-link:hover {
-    color: rgb(126, 128, 22);
+    color: rgb(117, 22, 146);
   }
   
   .navbar-link::after {
@@ -63,9 +63,9 @@
   }
   
   .navbar-link:hover::after {
-    background-color: rgb(197, 199, 60); 
+    background-color: rgb(155, 50, 187); 
   }
   
   .navbar-link.active::after {
-    background-color: rgb(197, 199, 60);
+    background-color: rgb(155, 50, 187);
   }

@@ -8,6 +8,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import { FaCode, FaSmileWink } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +38,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "dark:bg-gray-900 bg-gray-100 transition-colors duration-500 font-sans antialiased",
+          "transition-colors duration-500 font-sans antialiased",
           fontSans.variable,
         )}
       >
@@ -47,11 +48,13 @@ export default function RootLayout({
             <main className="container mx-auto flex-grow">
               {children}
             </main>
-            <footer className="bg-gray-100 dark:bg-gray-900 dark:text-white text-black py-4 text-center border-t border-gray-300 dark:border-gray-700">
-              <p className="mb-1">
-                &copy; {new Date().getFullYear()} Portfolio ❤️. All rights reserved.
+            <footer className="text-gray-600 dark:text-gray-400 py-6 px-4 text-center border-t border-gray-300 dark:border-gray-700">
+              <p className="mb-2 text-lg font-serif"> {/* Classic font style */}
+                &copy; {new Date().getFullYear()} Portfolio 😁. All rights reserved.
               </p>
-              <p className="text-sm">Designed by Sanele Hlongwane</p>
+              <p className="text-sm">
+                Designed by <span className="text-purple-800 dark:text-purple-400 font-semibold">Sanele Hlongwane</span>
+              </p>
             </footer>
           </div>
         </Providers>
