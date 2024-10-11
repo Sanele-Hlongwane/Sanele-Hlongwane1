@@ -58,12 +58,14 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/Sanele-Hlongwane" target="_blank">
-            <FaGithub className="w-8 h-8 text-gray-800 dark:text-white" /> {/* Adjust size as needed */}
-          </Link>
-          <Link href="https://linkedin.com/in/sanele-hlongwane" target="_blank">
-            <FaLinkedin className="w-8 h-8 text-gray-800 dark:text-white" /> {/* Adjust size as needed */}
-          </Link>
+            <div className="socials flex flex-row gap-2">
+                <Link href="https://github.com/Sanele-Hlongwane" target="_blank">
+                    <FaGithub className="w-8 h-8 text-gray-800 dark:text-white" /> {/* Adjust size as needed */}
+                </Link>
+                <Link href="https://linkedin.com/in/sanele-hlongwane" target="_blank">
+                    <FaLinkedin className="w-8 h-8 text-gray-800 dark:text-white" /> {/* Adjust size as needed */}
+                </Link>
+            </div>
         </div>
       </div>
       <div>

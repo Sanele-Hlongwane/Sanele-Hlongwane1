@@ -49,6 +49,7 @@ const SkillsSection = () => {
     });
   };
 
+  // Find the active tab data
   const activeTab = TAB_DATA.find((t) => t.id === tab);
 
   return (
