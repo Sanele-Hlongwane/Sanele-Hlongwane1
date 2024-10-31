@@ -1,10 +1,10 @@
 import { title } from "@/components/primitives";
+import { Projects } from "@/components/PortfolioSection";
 
 export default function PricingPage() {
   return (
     <div>
-      <h1 className={title()}>Portfolio Page</h1>
-      <h4>Comming soon</h4>
+      <Projects/>
     </div>
   );
 }
