@@ -270,7 +270,7 @@ export const PROJECTS = [
     "description":
       "Discover Eagles Ring - a unique platform connecting visionary entrepreneurs with forward-thinking investors. Eagles Ring is built to facilitate networking, investment opportunities, and collaborative growth, transforming the traditional approach to entrepreneurial engagement. With an intuitive, dynamic interface, Eagles Ring provides an elevated experience for professionals seeking meaningful connections.",
     "image": "/images/eagles-rings.png",
-    "link": "https://eaglesring.vercel.com"
+    "link": "https://eaglesring.vercel.app"
   },
   {
     "title": "Eco Tracker Mobile App",
