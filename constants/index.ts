@@ -276,14 +276,14 @@ export const PROJECTS = [
     "title": "Eco Tracker Mobile App",
     "description":
       "Track your ecological footprint with Eco Tracker - a mobile app dedicated to helping users make sustainable choices in everyday life. From carbon footprint tracking to eco-friendly tips, Eco Tracker empowers you to reduce your environmental impact, with an intuitive design that makes sustainability accessible and achievable.",
-    "image": "/images/eco-tracker.png",
+    "image": "/images/saveEnergy.jpg",
     "link": "https://github.com/Sanele-Hlongwane/eco-tracker"
   },
   {
     "title": "ThriveMentor Life Coaching Website",
     "description":
       "Welcome to ThriveMentor - a life coaching platform designed to empower personal growth and transformative change. With resources, guidance, and support from experienced life coaches, ThriveMentor is committed to helping individuals unlock their potential and achieve their personal and professional goals. Explore a world of motivation and empowerment with ThriveMentor.",
-    "image": "/images/thrive-mentor.png",
+    "image": "/images/lifeCoach.jpg",
     "link": "https://github.com/Sanele-Hlongwane/thrivementor"
   }
   

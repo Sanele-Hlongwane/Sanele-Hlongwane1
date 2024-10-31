@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
+import { Projects } from "@/components/PortfolioSection";
 
 import ContactSection from "@/components/ContactSection";
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
     <>
       <HeroSection/>
       <SkillsSection />
+      <Projects />
       <ContactSection />
     </>
   );

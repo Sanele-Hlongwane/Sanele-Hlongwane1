@@ -2,44 +2,27 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-// Import FormEvent from React
 import { FormEvent } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  // Define the handleSubmit function with the correct event type
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = {
-      email: e.currentTarget.email.value,
-      subject: e.currentTarget.subject.value,
-      message: e.currentTarget.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const email = e.currentTarget.email.value;
+    const subject = e.currentTarget.subject.value;
+    const message = e.currentTarget.message.value;
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+    // Create the mailto link
+    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // Open the mailto link in a new tab
+    window.location.href = mailtoLink;
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    setEmailSubmitted(true);
   };
 
   return (
@@ -49,7 +32,7 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-xl font-bold dark:text-white text-black my-2">
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -59,10 +42,10 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Sanele-Hlongwane" target="_blank">
-            <FaGithub className="w-8 h-8 text-gray-800 dark:text-white" /> {/* Adjust size as needed */}
+            <FaGithub className="w-8 h-8 text-gray-800 dark:text-white" />
           </Link>
           <Link href="https://linkedin.com/in/sanele-hlongwane" target="_blank">
-            <FaLinkedin className="w-8 h-8 text-gray-800 dark:text-white" /> {/* Adjust size as needed */}
+            <FaLinkedin className="w-8 h-8 text-gray-800 dark:text-white" />
           </Link>
         </div>
       </div>
