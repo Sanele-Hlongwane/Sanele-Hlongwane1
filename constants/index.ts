@@ -262,28 +262,28 @@ export const PROJECTS = [
     "title": "Meetings Hub",
     "description":
       "Welcome to Meetings Hub - a streamlined platform designed to facilitate seamless virtual collaboration and engagement. Built to optimize meeting management and enhance productivity, Meetings Hub offers intuitive scheduling, real-time updates, and user-friendly interfaces that embody the latest in web technology.",
-    "image": "/projects/meetings-hub.png",
+    "image": "/images/meetings-hub.png",
     "link": "https://meetings-hub.vercel.app",
   },
   {
     "title": "Eagles Ring",
     "description":
       "Discover Eagles Ring - a unique platform connecting visionary entrepreneurs with forward-thinking investors. Eagles Ring is built to facilitate networking, investment opportunities, and collaborative growth, transforming the traditional approach to entrepreneurial engagement. With an intuitive, dynamic interface, Eagles Ring provides an elevated experience for professionals seeking meaningful connections.",
-    "image": "/projects/eagles-rings.png",
+    "image": "/images/eagles-rings.png",
     "link": "https://eaglesring.vercel.com"
   },
   {
     "title": "Eco Tracker Mobile App",
     "description":
       "Track your ecological footprint with Eco Tracker - a mobile app dedicated to helping users make sustainable choices in everyday life. From carbon footprint tracking to eco-friendly tips, Eco Tracker empowers you to reduce your environmental impact, with an intuitive design that makes sustainability accessible and achievable.",
-    "image": "/projects/eco-tracker.png",
+    "image": "/images/eco-tracker.png",
     "link": "https://github.com/Sanele-Hlongwane/eco-tracker"
   },
   {
     "title": "ThriveMentor Life Coaching Website",
     "description":
       "Welcome to ThriveMentor - a life coaching platform designed to empower personal growth and transformative change. With resources, guidance, and support from experienced life coaches, ThriveMentor is committed to helping individuals unlock their potential and achieve their personal and professional goals. Explore a world of motivation and empowerment with ThriveMentor.",
-    "image": "/projects/thrive-mentor.png",
+    "image": "/images/thrive-mentor.png",
     "link": "https://github.com/Sanele-Hlongwane/thrivementor"
   }
   
