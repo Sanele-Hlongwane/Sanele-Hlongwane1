@@ -71,7 +71,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
             <Image
-              src="/images/sanele.jpg"
+              src="/images/Sanele.avif"
               alt="sanele"
               className="absolute inset-0 object-cover"
               width={300}

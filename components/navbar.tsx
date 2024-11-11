@@ -18,6 +18,7 @@ import logo from "@/public/images/logo.png";
 import router from "next/router";
 import { FaSun, FaMoon } from "react-icons/fa";
 import SaneleLogo from "./SaneleLogo";
+import Sanele from "@/public/images/sanele.jpg";
 
 export const Navbar = () => {
   const [role, setRole] = useState<string | null>(null);
@@ -94,7 +95,13 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit max-h-fit">
           <Link className="flex justify-start items-center gap-1" href="/">
-            <SaneleLogo />
+            <Image
+              src={Sanele}
+              alt="Sanele Hlongwane"
+              width={50}       // Adjust width as desired
+              height={50}      // Adjust height as desired
+              className="rounded-full" // Styling for a circular image
+            />
           </Link>
         </NavbarBrand>
 
