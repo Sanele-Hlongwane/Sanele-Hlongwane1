@@ -14,12 +14,10 @@ const EmailSection = () => {
     const subject = e.currentTarget.subject.value;
     const message = e.currentTarget.message.value;
 
-    // Create the mailto link
     const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
 
-    // Open the mailto link in a new tab
     window.location.href = mailtoLink;
 
     setEmailSubmitted(true);
