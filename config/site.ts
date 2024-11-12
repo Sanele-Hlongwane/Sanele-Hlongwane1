@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Sanele Hlongwane",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "Sanele Hlongwane&apos;s portfolio showcases creative, impactful websites that are easy to navigate and visually captivating.",
   navItems: [
     {
       label: "Home",

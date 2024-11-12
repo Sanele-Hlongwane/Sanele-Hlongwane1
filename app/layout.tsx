@@ -49,7 +49,7 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="text-gray-600 dark:text-gray-400 py-6 px-4 text-center border-t border-gray-300 dark:border-gray-700">
-              <p className="mb-2 text-lg font-serif"> {/* Classic font style */}
+              <p className="mb-2 text-lg font-serif">
                 &copy; {new Date().getFullYear()} Portfolio 😁. All rights reserved.
               </p>
               <p className="text-sm">
