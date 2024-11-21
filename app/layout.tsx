@@ -1,14 +1,11 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-import SaneleLogo from "@/components/SaneleLogo";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-import { FaCode, FaSmileWink } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: {
