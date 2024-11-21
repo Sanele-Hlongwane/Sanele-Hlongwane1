@@ -15,7 +15,7 @@ const EmailSection = () => {
     const message = e.currentTarget.message.value;
 
     // Create the mailto link
-    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:masumpasanele5@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
 
