@@ -25,7 +25,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Sanele Hlongwane",
-                1000,
+                1500,
                 "Web Developer",
                 1000,
                 "Mobile Developer",

@@ -14,7 +14,7 @@ const EmailSection = () => {
     const subject = e.currentTarget.subject.value;
     const message = e.currentTarget.message.value;
 
-    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:masumpasanele5@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
 
