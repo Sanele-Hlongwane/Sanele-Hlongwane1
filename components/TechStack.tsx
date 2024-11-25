@@ -36,7 +36,7 @@ import { MdOutlineDesktopWindows } from "react-icons/md";
 import { useState } from "react";
 
 const TechStack = () => {
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);  // State to track the selected category
+    const [selectedCategory, setSelectedCategory] = useState<string>("Languages");
 
 
   // Grouped Tech Stack by Categories
