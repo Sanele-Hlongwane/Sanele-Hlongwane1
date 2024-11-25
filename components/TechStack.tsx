@@ -106,16 +106,24 @@ const TechStack = () => {
 
         {/* Loop through categories and display them as top nav options */}
         <div className="flex justify-center space-x-10 mb-8">
-          {techStack.map((category, index) => (
-            <h2
-              key={index}
-              className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 cursor-pointer hover:underline"
-              onClick={() => setSelectedCategory(category.category)}
-            >
-              {category.category}
-            </h2>
-          ))}
-        </div>
+  {techStack.map((category, index) => (
+    <h2
+      key={index}
+      className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 cursor-pointer hover:underline"
+      role="button"
+      tabIndex={0}
+      onClick={() => setSelectedCategory(category.category)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          setSelectedCategory(category.category);
+        }
+      }}
+    >
+      {category.category}
+    </h2>
+  ))}
+</div>
+
 
         {/* Render content based on selected category */}
         {techStack
