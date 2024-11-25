@@ -104,33 +104,33 @@ const TechStack = () => {
           My Tech Stack
         </h1>
 
-        {/* Loop through categories and display them as top nav options */}
-        <div className="flex justify-center space-x-10 mb-8">
-  {techStack.map((category, index) => (
-    <button
-      key={index}
-      className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 cursor-pointer hover:underline"
-      onClick={() => setSelectedCategory(category.category)}
-    >
-      {category.category}
-    </button>
-  ))}
-</div>
+        <div className="flex justify-center space-x-10 mb-8 border-b border-gray-700 pb-4">
+          {techStack.map((category, index) => (
+            <button
+              key={index}
+              className={`text-2xl sm:text-3xl font-bold px-4 py-2 rounded-md transition-all duration-300 ${
+                selectedCategory === category.category
+                  ? "text-blue-400 border-b-4 border-blue-400"
+                  : "text-gray-400 hover:text-blue-300"
+              }`}
+              onClick={() => setSelectedCategory(category.category)}
+            >
+              {category.category}
+            </button>
+          ))}
+        </div>
 
-
-        {/* Render content based on selected category */}
         {techStack
           .filter((category) => category.category === selectedCategory)
           .map((category, index) => (
             <div
               key={index}
-              className="animate__animated animate__fadeInUp animate__delay-1s"
+              className="animate__animated animate__fadeInUp animate__delay-1s mt-8"
             >
-              <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 animate__animated animate__fadeIn animate__delay-2s">
+              <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600">
                 {category.category}
               </h2>
 
-              {/* Loop through tech items in the category */}
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
                 {category.items.map((tech, index) => (
                   <div
@@ -145,9 +145,9 @@ const TechStack = () => {
                     </span>
                   </div>
                 ))}
-              </div>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
     </div>
   );
