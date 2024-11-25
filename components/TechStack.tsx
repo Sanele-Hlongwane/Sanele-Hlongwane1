@@ -36,10 +36,8 @@ import { MdOutlineDesktopWindows } from "react-icons/md";
 import { useState } from "react";
 
 const TechStack = () => {
-    const [selectedCategory, setSelectedCategory] = useState<string>("Languages");
+  const [selectedCategory, setSelectedCategory] = useState<string>("Languages");
 
-
-  // Grouped Tech Stack by Categories
   const techStack = [
     {
       category: "Languages",
@@ -100,7 +98,7 @@ const TechStack = () => {
   return (
     <div className="min-h-screen bg-darkBg text-white py-10 px-5">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-5xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600 animate__animated animate__fadeIn animate__delay-1s">
+        <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
           My Tech Stack
         </h1>
 
